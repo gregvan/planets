@@ -16,11 +16,12 @@ const PlanetsList = async () => {
 
   const planets = await getEvents();
 
+
   return (
-    <ul>
+    <ul className="bg-midnight text-tahiti">
       {planets.map((planet, index) => (
         <li key={index}>          
-          <h2>{planet.name}</h2>
+          <h2 className="text-4xl 600 red font-bold underline">{planet.name}</h2>
           <a href={planet.url}>MORE
             {planet.image_url}
             <br />
